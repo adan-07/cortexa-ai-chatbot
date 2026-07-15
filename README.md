@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Cortexa - AI Assistant for Students
+
+Cortexa is a multi-modal AI chatbot built to help students with their daily academic tasks. It combines conversational AI, document understanding, voice input, and image generation into a single tool.
+
+## Features
+
+- **AI Chat** — Powered by Google's Gemini API, with full conversation memory for natural, context-aware discussions
+- **Document Q&A** — Upload a PDF (notes, assignments, research papers) and ask questions directly about its content
+- **Voice Input** — Speak your questions instead of typing, using the browser's built-in speech recognition
+- **Image Generation** — Generate images from text prompts using Stable Diffusion / FLUX models via Hugging Face
+
+## Tech Stack
+
+- **Frontend:** Next.js, React, Tailwind CSS
+- **Backend:** Next.js API Routes
+- **AI:** Google Gemini API (chat), Hugging Face Inference API (image generation)
+- **PDF Processing:** unpdf
+- **Voice:** Web Speech API (browser-native)
 
 ## Getting Started
 
-First, run the development server:
+1. Clone the repository
+2. Install dependencies
+3. Create a `.env.local` file in the root directory and add your API keys:
+GEMINI_API_KEY=your_gemini_api_key
+HF_API_TOKEN=your_huggingface_token
+4. Run the development server
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+5. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Why I Built This
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+As a student, I wanted a single AI tool that could handle multiple everyday needs — chatting, summarizing documents, taking voice input, and generating visuals — all without cost, using free-tier APIs and serverless-friendly architecture.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Author
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Adan Mudassar**
+AI Automation Engineer | Applied AI Developer
