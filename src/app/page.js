@@ -71,6 +71,14 @@ export default function Home() {
   const handleFileUpload = async (e) => {
     const file = e.target.files[0];
     if (!file) return;
+    const handleFileUpload = async (e) => {
+    const file = e.target.files[0];
+    if (!file) return;
+
+    if (file.size > 10 * 1024 * 1024) {
+      alert("File is too large. Please upload a PDF smaller than 10MB.");
+      return;
+    }
 
     setUploading(true);
     const formData = new FormData();
